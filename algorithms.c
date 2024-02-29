@@ -18,7 +18,7 @@ double potentialEnergy(Parameters p, double x) {
  * Calculates the kinetic energy of the system
 */
 double kineticEnergy(Parameters p, double v) {
-    return 0.5*p.mass*v*v;
+    return 0.5*p.mass*v*v; 
 }
 
 /**
