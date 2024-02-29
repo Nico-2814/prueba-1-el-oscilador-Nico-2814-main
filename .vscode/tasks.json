@@ -1,0 +1,50 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Compile main file",
+            "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+            "args": [
+                "-Wall",
+                "algorithms.c",
+                "input_output.c",
+                "main.c",
+                "-o",
+                "harmonic_oscillator.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": "$gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compiles all the *.c files in the working directory"
+        },
+        {
+            "type": "shell",
+            "label": "Compile tests file",
+            "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+            "args": [
+                "-Wall",
+                "algorithms.c",
+                "input_output.c",
+                "tests/public_tests.c",
+                "tests/utils.c",
+                "-o",
+                "tests/public_tests.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": "$gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compiles the program using public_tests.c as main" 
+        }
+    ],
+    "version": "2.0.0"
+}

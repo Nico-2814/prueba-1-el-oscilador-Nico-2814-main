@@ -1,0 +1,8 @@
+mass 10
+k 20
+natural_length 160
+anchor_position 640
+h 0.0001
+t_max 50
+x0 840
+v0 0
