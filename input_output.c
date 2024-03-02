@@ -13,9 +13,6 @@
 int loadParameters(int spring_id, Parameters *parameters) {
     char id[100];
     itoa(spring_id, id, 10);
-    if (spring_id!=1 && spring_id!=2){
-        return -1;
-    }
     FILE *f;
     char nom[17]="data/spring_";
     f=fopen(strcat(strcat(nom,id), ".txt"), "r");
