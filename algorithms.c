@@ -34,7 +34,7 @@ double mechanicalEnergy(Parameters p, double x, double v) {
 void evolutionEuler(Parameters p, double *x, double *v) {
     double F=forceSpring(p, *x);
     *x+=p.h*(*v);
-    *v+=p.h*F/p.mass; 
+    *v+=p.h*F/p.mass;  
 }
 
 /**
