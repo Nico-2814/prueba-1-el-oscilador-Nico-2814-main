@@ -9,7 +9,7 @@
  * where X is the number of the spring (spring_id). If the file 
  * does not exist, the function should return -1. Otherwise, it
  * should return 0.
-*/
+*/ 
 int loadParameters(int spring_id, Parameters *parameters) {
     char id[100];
     itoa(spring_id, id, 10);
